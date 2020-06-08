@@ -59,7 +59,7 @@ podTemplate(label: label, containers: [
 		echo "Start call container"
 		stage('sonar-scanner') {
 			container("scanner") {
-				sh """ sonar-scanner \
+				sh """ mvn sonar:sonar \
 					-Dsonar.projectName=${sonarQubeProject} \
 					-Dsonar.host.url=${sonarQubeURL} \
 					-Dsonar.password=${sonarQubeToken} \
