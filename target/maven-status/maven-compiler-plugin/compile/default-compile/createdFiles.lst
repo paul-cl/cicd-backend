@@ -1,0 +1,9 @@
+com/garage/product/api/SwaggerConfig.class
+com/garage/product/filter/CORSFilter.class
+com/garage/product/controller/ProductController.class
+com/garage/product/service/ProductService.class
+com/garage/product/model/Product.class
+com/garage/product/exception/ResourceNotFoundException.class
+com/garage/product/api/ProductAPI.class
+com/garage/product/ProductApplication.class
+com/garage/product/repository/ProductRepository.class

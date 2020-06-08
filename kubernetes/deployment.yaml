@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lab99-backend
+  labels:
+    app: lab99-backend
+spec:
+  selector:
+    matchLabels:
+      app: lab99-backend
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: lab99-backend
+    spec:
+      containers:
+        - name: lab99-backend
+          image: happycloudpak/lab99-backend
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 3000
